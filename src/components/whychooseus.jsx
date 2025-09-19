@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { ChevronRight, Star, Award, Users, Clock } from "lucide-react";
+import { ChevronRight, Star, Award, Users } from "lucide-react";
 import { motion } from "motion/react";
 
 const features = [
@@ -23,12 +23,6 @@ const features = [
     description: "Our certified professionals bring decades of experience to transform your vision into reality with precision.",
     stats: "50+ Experts"
   },
-  {
-    icon: <Clock className="w-5 h-5" />,
-    title: "Timely Delivery",
-    description: "We respect your time and deliver projects on schedule without compromising on quality or attention to detail.",
-    stats: "98% On-Time"
-  }
 ];
 
 const WhyChooseUs = () => {
@@ -58,7 +52,7 @@ const WhyChooseUs = () => {
                 className="w-full h-64 sm:h-80 lg:h-96 xl:h-[500px] object-cover transition-transform duration-700 group-hover:scale-110"
                 initial={{ scale: 1.1 }}
                 whileInView={{ scale: 1 }}
-                transition={{ duration: 1.2, ease: "easeOut" }}
+                transition={{ duration: 1, ease: "easeOut" }}
                 viewport={{ once: true }}
               />
 

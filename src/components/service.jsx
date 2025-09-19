@@ -39,7 +39,7 @@ const ServicesSection = () => {
 
           {/* Left Content Section */}
           <motion.div
-            className="lg:w-[40%] w-full space-y-6 lg:space-y-8"
+            className="lg:w-[40%] w-full space-y-6 lg:space-y-8 md:pb-20"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}

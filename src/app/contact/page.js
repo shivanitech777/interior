@@ -22,7 +22,7 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Simulate form submission
+    
     setIsSubmitted(true);
     setTimeout(() => setIsSubmitted(false), 3000);
   };
@@ -61,7 +61,7 @@ const ContactForm = () => {
       <main className="bg-gradient-to-br from-white via-gray-50 to-white py-12 md:py-20 px-4 sm:px-6 lg:px-16 overflow-hidden">
         <div className="max-w-7xl mx-auto">
 
-          {/* Header Section */}
+       
           <motion.div
             className="text-center mb-12 md:mb-16"
             initial={{ opacity: 0, y: 30 }}
@@ -91,8 +91,7 @@ const ContactForm = () => {
           </motion.div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-
-            {/* Contact Form */}
+ 
             <motion.div
               className="order-2 lg:order-1"
               initial={{ opacity: 0, x: -50 }}
@@ -211,7 +210,7 @@ const ContactForm = () => {
               </motion.div>
             </motion.div>
 
-            {/* Contact Info & Image */}
+        
             <motion.div
               className="order-1 lg:order-2 space-y-8"
               initial={{ opacity: 0, x: 50 }}
@@ -219,7 +218,7 @@ const ContactForm = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              {/* Contact Image */}
+          
               <motion.div
                 className="relative group overflow-hidden rounded-3xl shadow-2xl"
                 whileHover={{ y: -8 }}
@@ -249,7 +248,7 @@ const ContactForm = () => {
                 </motion.div>
               </motion.div>
 
-              {/* Contact Information Cards */}
+             
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {contactInfo.map((info, index) => (
                   <motion.div
@@ -272,27 +271,7 @@ const ContactForm = () => {
                 ))}
               </div>
 
-              {/* Call to Action */}
-              <motion.div
-                className="bg-gradient-to-r from-amber-600 to-amber-700 text-white p-6 rounded-2xl text-center"
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.6, delay: 1.2 }}
-                viewport={{ once: true }}
-                whileHover={{ scale: 1.02 }}
-              >
-                <h4 className="text-xl font-bold mb-2">Ready to Start?</h4>
-                <p className="text-amber-100 text-sm mb-4">
-                  Schedule a free consultation with our design experts
-                </p>
-                <motion.button
-                  className="bg-white text-amber-700 px-6 py-3 rounded-xl font-semibold hover:bg-amber-50 transition-colors duration-300"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  Book Consultation
-                </motion.button>
-              </motion.div>
+        
             </motion.div>
           </div>
         </div>

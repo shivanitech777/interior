@@ -55,7 +55,7 @@ const AboutSection = () => {
                 }}
               />
 
-              <div className="relative text-center py-8">
+              <div className="relative text-left py-8">
                 <CountUp
                   from={0}
                   to={36}

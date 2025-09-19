@@ -14,67 +14,19 @@ export default function Footer() {
 
   return (
     <footer className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-black text-gray-300 overflow-hidden">
-      {/* Background Pattern */}
+    
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0 bg-[radial-gradient(circle_500px_at_50%_200px,#3b82f6,transparent)]"></div>
       </div>
 
       <div className="relative z-10 px-4 sm:px-6 lg:px-16 py-12 md:py-20">
         <div className="max-w-7xl mx-auto">
-          {/* Newsletter Section */}
-          <motion.div
-            className="mb-12 md:mb-16 text-center"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            viewport={{ once: true }}
-          >
-            <motion.h3
-              className="text-2xl md:text-3xl lg:text-4xl font-serif text-white mb-4"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              viewport={{ once: true }}
-            >
-              Stay Updated with <span className="text-amber-400">Latest Trends</span>
-            </motion.h3>
+      
 
-            <motion.p
-              className="text-gray-400 mb-8 max-w-2xl mx-auto"
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              viewport={{ once: true }}
-            >
-              Subscribe to receive inspiration, design ideas, and exclusive updates in your inbox.
-            </motion.p>
-
-            <motion.div
-              className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-              viewport={{ once: true }}
-            >
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1 px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:ring-2 focus:ring-amber-500 focus:border-transparent outline-none transition-all duration-300"
-              />
-              <motion.button
-                className="px-6 py-3 bg-gradient-to-r from-amber-600 to-amber-700 text-white rounded-xl font-semibold hover:from-amber-700 hover:to-amber-800 transition-all duration-300 shadow-lg"
-                whileHover={{ scale: 1.05, y: -2 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Subscribe
-              </motion.button>
-            </motion.div>
-          </motion.div>
-
-          {/* Main Footer Content */}
+         
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
 
-            {/* Company Info */}
+        
             <motion.div
               className="space-y-6"
               initial={{ opacity: 0, y: 30 }}
@@ -104,7 +56,7 @@ export default function Footer() {
                 Transforming spaces with innovative kitchen designs. Your dream kitchen awaits.
               </p>
 
-              {/* Contact Info */}
+             
               <div className="space-y-3">
                 <motion.div
                   className="flex items-center gap-3 group cursor-pointer"
@@ -146,7 +98,7 @@ export default function Footer() {
                 </motion.div>
               </div>
 
-              {/* Social Media */}
+         
               <div className="flex space-x-4">
                 {[
                   { Icon: FaFacebookF, href: "#", color: "hover:text-blue-400" },
@@ -173,7 +125,7 @@ export default function Footer() {
               </div>
             </motion.div>
 
-            {/* Services */}
+           
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -209,7 +161,6 @@ export default function Footer() {
               </ul>
             </motion.div>
 
-            {/* Quick Links */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -251,7 +202,7 @@ export default function Footer() {
               </ul>
             </motion.div>
 
-            {/* Gallery/Recent Work */}
+      
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -296,7 +247,6 @@ export default function Footer() {
             </motion.div>
           </div>
 
-          {/* Footer Bottom */}
           <motion.div
             className="mt-12 pt-8 border-t border-gray-700/50"
             initial={{ opacity: 0, y: 20 }}
